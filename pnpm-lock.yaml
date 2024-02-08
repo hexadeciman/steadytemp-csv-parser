@@ -47,6 +47,12 @@ dependencies:
   hexadeciman-react-github-contribution-calendar:
     specifier: 2.1.2
     version: 2.1.2(react-dom@18.0.0)(react@18.0.0)
+  highcharts:
+    specifier: ^11.3.0
+    version: 11.3.0
+  highcharts-react-official:
+    specifier: ^3.2.1
+    version: 3.2.1(highcharts@11.3.0)(react@18.0.0)
   luxon:
     specifier: ^2.3.2
     version: 2.5.2
@@ -56,6 +62,9 @@ dependencies:
   react:
     specifier: 18.0.0
     version: 18.0.0
+  react-csv-importer:
+    specifier: ^0.8.1
+    version: 0.8.1(react-dom@18.0.0)(react@18.0.0)
   react-dom:
     specifier: 18.0.0
     version: 18.0.0(react@18.0.0)
@@ -3355,6 +3364,19 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
+  /@use-gesture/core@10.3.0:
+    resolution: {integrity: sha512-rh+6MND31zfHcy9VU3dOZCqGY511lvGcfyJenN4cWZe0u1BH6brBpBddLVXhF2r4BMqWbvxfsbL7D287thJU2A==}
+    dev: false
+
+  /@use-gesture/react@10.3.0(react@18.0.0):
+    resolution: {integrity: sha512-3zc+Ve99z4usVP6l9knYVbVnZgfqhKah7sIG+PS2w+vpig2v2OLct05vs+ZXMzwxdNCMka8B+8WlOo0z6Pn6DA==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      '@use-gesture/core': 10.3.0
+      react: 18.0.0
+    dev: false
+
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
     dependencies:
@@ -3860,6 +3882,11 @@ packages:
     engines: {node: '>= 4.5.0'}
     hasBin: true
     dev: true
+
+  /attr-accept@2.2.2:
+    resolution: {integrity: sha512-7prDjvt9HmqiZ0cl5CRjtS84sEyhsHP2coDkaZKRKVfCDo9s7iw7ChVmar78Gu9pC4SoR/28wFu/G5JJhTnqEg==}
+    engines: {node: '>=4'}
+    dev: false
 
   /autoprefixer@10.4.16(postcss@8.4.32):
     resolution: {integrity: sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==}
@@ -5856,6 +5883,13 @@ packages:
       webpack: 5.89.0
     dev: false
 
+  /file-selector@0.5.0:
+    resolution: {integrity: sha512-s8KNnmIDTBoD0p9uJ9uD0XY38SCeBOtj0UMXyQSLg1Ypfrfj8+dAvwsLjYQkQ2GjhVtp2HrnF5cJzMhBjfD8HA==}
+    engines: {node: '>= 10'}
+    dependencies:
+      tslib: 2.6.2
+    dev: false
+
   /filelist@1.0.4:
     resolution: {integrity: sha512-w1cEuf3S+DrLCQL7ET6kz+gmlJdbq9J7yXCSjK/OZCPA+qEN1WyF4ZAf0YYJa4/shHJra2t/d/r8SV4Ji+x+8Q==}
     dependencies:
@@ -6257,6 +6291,20 @@ packages:
       react-measure: 2.5.2(react-dom@18.0.0)(react@18.0.0)
     transitivePeerDependencies:
       - react-dom
+    dev: false
+
+  /highcharts-react-official@3.2.1(highcharts@11.3.0)(react@18.0.0):
+    resolution: {integrity: sha512-hyQTX7ezCxl7JqumaWiGsroGWalzh24GedQIgO3vJbkGOZ6ySRAltIYjfxhrq4HszJOySZegotEF7v+haQ75UA==}
+    peerDependencies:
+      highcharts: '>=6.0.0'
+      react: '>=16.8.0'
+    dependencies:
+      highcharts: 11.3.0
+      react: 18.0.0
+    dev: false
+
+  /highcharts@11.3.0:
+    resolution: {integrity: sha512-Dk+Qfk/xit8KnXKPDxmcVcq48ZlcVSq7oYJR5VZlAVWnJ0BY3JFFi1GOvgSNUzlh2wzsfenihWpkAkWoag4Xqg==}
     dev: false
 
   /hoist-non-react-statics@3.3.2:
@@ -8079,6 +8127,10 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
+  /papaparse@5.4.1:
+    resolution: {integrity: sha512-HipMsgJkZu8br23pW15uvo6sib6wne/4woLZPlFf3rpDyMe9ywEXUsuD7+6K9PRkJlVT51j/sCOYDKGGS3ZJrw==}
+    dev: false
+
   /param-case@3.0.4:
     resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
     dependencies:
@@ -9625,6 +9677,19 @@ packages:
       whatwg-fetch: 3.6.19
     dev: false
 
+  /react-csv-importer@0.8.1(react-dom@18.0.0)(react@18.0.0):
+    resolution: {integrity: sha512-GcFQyeNJFFymqqnPi2YEr+UJWrLy0bdKEZ86n7HMcJ1O3ZGU0KQxB5CnYiKLT40QkWP8eAajXXy7o90lHmSj2Q==}
+    peerDependencies:
+      react: ^16.8.0 || >=17.0.0
+      react-dom: ^16.8.0 || >=17.0.0
+    dependencies:
+      '@use-gesture/react': 10.3.0(react@18.0.0)
+      papaparse: 5.4.1
+      react: 18.0.0
+      react-dom: 18.0.0(react@18.0.0)
+      react-dropzone: 12.1.0(react@18.0.0)
+    dev: false
+
   /react-dev-utils@12.0.1(eslint@8.55.0)(typescript@4.9.5)(webpack@5.89.0):
     resolution: {integrity: sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ==}
     engines: {node: '>=14'}
@@ -9675,6 +9740,18 @@ packages:
       loose-envify: 1.4.0
       react: 18.0.0
       scheduler: 0.21.0
+
+  /react-dropzone@12.1.0(react@18.0.0):
+    resolution: {integrity: sha512-iBYHA1rbopIvtzokEX4QubO6qk5IF/x3BtKGu74rF2JkQDXnwC4uO/lHKpaw4PJIV6iIAYOlwLv2FpiGyqHNog==}
+    engines: {node: '>= 10.13'}
+    peerDependencies:
+      react: '>= 16.8'
+    dependencies:
+      attr-accept: 2.2.2
+      file-selector: 0.5.0
+      prop-types: 15.8.1
+      react: 18.0.0
+    dev: false
 
   /react-error-overlay@6.0.11:
     resolution: {integrity: sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==}
