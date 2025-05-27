@@ -28,7 +28,7 @@ jobs:
           cache: "pnpm"
 
       - run: CI=true pnpm i
-      - run: pnpm build
+      - run: pnpm run build
 
       - name: Zip build
         uses: thedoctor0/zip-release@master
@@ -37,7 +37,7 @@ jobs:
           path: build
 
       - name: Upload build zip artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: app-${{ steps.tag_version.outputs.new_tag }}.zip
           path: app-${{ steps.tag_version.outputs.new_tag }}.zip
@@ -68,7 +68,7 @@ jobs:
           outPath: deploy.tar
 
       - name: Upload build zip artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: deploy.tar
           path: deploy.tar
